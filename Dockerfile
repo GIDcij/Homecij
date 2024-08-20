@@ -16,9 +16,10 @@ COPY . .
 # Compila la aplicación para producción
 RUN npm run build
 
-# Sirve la aplicación con un servidor estático
+# Sirve la aplicación con un servidor estático y especifica el puerto
 RUN npm install -g serve
+ENV PORT 1133
 CMD ["serve", "-s", "build"]
 
-# Expone el puerto que usará la aplicación
+# Expone el puerto 1133
 EXPOSE 80
