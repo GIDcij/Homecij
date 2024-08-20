@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
-}
+/* src/App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .navbar {
+    background-color: #006473;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .navbar h1 {
+    margin: 0;
   }
-}
+  
+  .admin-button {
+    padding: 10px 20px;
+    background-color: #00515e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .admin-button:hover {
+    background-color: #002f36;
+  }
+  
+  .admin-container, .login-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .admin-container input, .login-container input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .admin-container button, .login-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #008599;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .admin-container button:hover, .login-container button:hover {
+    background-color: #006473;
+  }
+  
+  .home-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .button-item {
+    margin: 15px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button-item img {
+    max-width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .button-item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .button-item a {
+    text-decoration: none;
+    color: #0006473;
+    font-weight: bold;
+  }
+  
+  .button-item a:hover {
+    color: #004a55;
+  }
+  
+  .button-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .button-item:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .button-item img {
+    max-width: 50px;
+    margin-right: 10px;
+  }
+  .edit-button-container {
+    margin-top: 20px;
+  }
+  
+  .edit-buttons-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #006473;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .edit-buttons-button:hover {
+    background-color: #006473;
+  }
+  
+  .edit-menu {
+    margin-top: 20px;
+  }
+  
+  .button-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .button-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
