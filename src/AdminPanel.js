@@ -134,10 +134,11 @@ const AdminPanel = () => {
           <div className="button-list">
             {buttons.map(button => (
               <div key={button.id} className="button-item">
-                <img src={button.logo || 'default-logo.png'} alt={button.name} />
                 <h3>{button.name}</h3>
-                <button onClick={() => handleEdit(button)}>Editar</button>
-                <button onClick={() => handleDelete(button.id)} disabled={deleting}>
+                <button onClick={() => handleEdit(button)} className="action-button">
+                  Editar
+                </button>
+                <button onClick={() => handleDelete(button.id)} disabled={deleting} className="action-button">
                   {deleting ? 'Eliminando...' : 'Eliminar'}
                 </button>
               </div>
